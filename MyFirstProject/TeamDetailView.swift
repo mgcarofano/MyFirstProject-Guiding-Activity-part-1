@@ -13,28 +13,46 @@ struct TeamDetailView: View {
     var team: Team
     
     var body: some View{
-        ZStack{
-            
-            team.teamMates[0].favouriteColor
-                .opacity(0.35)
-                .ignoresSafeArea()
-            
-            VStack{
-                Image(team.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 300, height: 300)
-                    .clipShape(Circle())
+        NavigationStack {
+            ZStack{
+                
+                team.favouriteColor
+                    .opacity(0.35)
+                    .ignoresSafeArea()
+                
+                VStack{
+                    Image(team.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height: 300)
+                        .clipShape(Circle())
+                        .shadow(radius: 10)
+                        .padding()
+                    
+                    Text(team.name)
+                        .font(.title).bold()
+                    
+                    .foregroundColor(team.favouriteColor)
+                    
+                    Text(team.description)
+                        .font(.body)
+                    
+                    List{
+                        ForEach(team.teamMates) {
+                            learner in NavigationLink(destination: LearnedDetailView(learner: learner)){
+                                HStack {
+                                    Image(systemName: "person.fill")
+                                        .foregroundColor(learner.favouriteColor)
+                                    Text(learner.name).font(.body).bold()
+                                    Text(learner.surname)
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .scrollContentBackground(.hidden)
                     .shadow(radius: 10)
-                    .padding()
-                
-                Text(team.name)
-                    .font(.title).bold()
-                
-                .foregroundColor(team.teamMates[0].favouriteColor)
-                
-                Text(team.description)
-                    .font(.body)
+                }
             }
         }
     }
@@ -42,6 +60,6 @@ struct TeamDetailView: View {
 
 struct TeamDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamDetailView(team: sharedData.teams[0])
+        TeamDetailView(team: sharedData.teams[5])
     }
 }

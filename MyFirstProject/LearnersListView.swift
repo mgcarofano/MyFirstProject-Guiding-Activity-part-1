@@ -31,6 +31,7 @@ struct LearnersListView: View {
             }
             .searchable(text: $searchable, placement: /*@START_MENU_TOKEN@*/.automatic/*@END_MENU_TOKEN@*/)
             .navigationTitle("Learners")
+            .shadow(radius: 10)
         }
     }
 }

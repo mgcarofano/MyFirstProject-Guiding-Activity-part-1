@@ -23,3 +23,6 @@ struct MyFirstProjectApp: App {
         }
     }
 }
+
+// Riferimenti
+// https://www.hackingwithswift.com/quick-start/swiftui/adding-tabview-and-tabitem
