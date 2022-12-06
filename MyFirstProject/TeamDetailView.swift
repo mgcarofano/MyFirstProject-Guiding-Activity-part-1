@@ -63,3 +63,6 @@ struct TeamDetailView_Previews: PreviewProvider {
         TeamDetailView(team: sharedData.teams[5])
     }
 }
+
+// Riferimenti
+// https://sarunw.com/posts/swiftui-list-background-color/#how-to-hide-swiftui-list-background
