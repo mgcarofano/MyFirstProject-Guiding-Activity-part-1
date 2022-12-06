@@ -11,7 +11,14 @@ import SwiftUI
 struct MyFirstProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            LearnersListView()
+            TabView {
+                LearnersListView().tabItem {
+                    Label("Learners", systemImage: "person.fill")
+                }
+                TeamListView().tabItem {
+                    Label("Teams", systemImage: "person.3.fill")
+                }
+            }
         }
     }
 }
