@@ -13,10 +13,20 @@ struct TeamListView: View {
     @ObservedObject var myData = sharedData
     @State private var searchable = ""
     
+    var teamSearchResults: [Team] {
+        if searchable.isEmpty {
+            return myData.teams
+        } else {
+            return myData.teams.filter {
+                $0.name.contains(searchable)
+            }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(myData.teams) {
+                ForEach(teamSearchResults) {
                     team in NavigationLink(destination: TeamDetailView(team: team)){
                         
                         ZStack (alignment: .bottomLeading) {

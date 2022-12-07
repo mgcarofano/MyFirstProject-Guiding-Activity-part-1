@@ -10,6 +10,7 @@
 		44149D55293F35B500F58E21 /* LearnerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44149D54293F35B500F58E21 /* LearnerDetailView.swift */; };
 		44149D57293F52EB00F58E21 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44149D56293F52EB00F58E21 /* TeamListView.swift */; };
 		44149D59293F5BFB00F58E21 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44149D58293F5BFB00F58E21 /* TeamDetailView.swift */; };
+		44C6585A29408E3F0058FEDF /* NewLearnerBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6585929408E3F0058FEDF /* NewLearnerBottomSheet.swift */; };
 		6952946D28EDB7D30017AD2F /* MyFirstProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6952946C28EDB7D30017AD2F /* MyFirstProjectApp.swift */; };
 		6952947128EDB7D40017AD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6952947028EDB7D40017AD2F /* Assets.xcassets */; };
 		6952947428EDB7D40017AD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6952947328EDB7D40017AD2F /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		44149D54293F35B500F58E21 /* LearnerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerDetailView.swift; sourceTree = "<group>"; };
 		44149D56293F52EB00F58E21 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 		44149D58293F5BFB00F58E21 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		44C6585929408E3F0058FEDF /* NewLearnerBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearnerBottomSheet.swift; sourceTree = "<group>"; };
 		6952946928EDB7D30017AD2F /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6952946C28EDB7D30017AD2F /* MyFirstProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstProjectApp.swift; sourceTree = "<group>"; };
 		6952947028EDB7D40017AD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				6952946C28EDB7D30017AD2F /* MyFirstProjectApp.swift */,
 				69AF5C7E28FD9C5B0026A08C /* LearnersListView.swift */,
 				44149D54293F35B500F58E21 /* LearnerDetailView.swift */,
+				44C6585929408E3F0058FEDF /* NewLearnerBottomSheet.swift */,
 				6952947A28EDB7E60017AD2F /* Data.swift */,
 				69AF5C7C28FD9B960026A08C /* Model.swift */,
 				44149D56293F52EB00F58E21 /* TeamListView.swift */,
@@ -159,6 +162,7 @@
 				44149D55293F35B500F58E21 /* LearnerDetailView.swift in Sources */,
 				69AF5C7F28FD9C5B0026A08C /* LearnersListView.swift in Sources */,
 				69AF5C7D28FD9B960026A08C /* Model.swift in Sources */,
+				44C6585A29408E3F0058FEDF /* NewLearnerBottomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyFirstProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 344FMYMTA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyFirstProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 344FMYMTA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

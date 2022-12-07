@@ -144,7 +144,7 @@ class SharedData: ObservableObject {
             description: "An apple a day keeps bugs away!"
         ),
         Team(
-            name: "Pink Team 🌷",
+            name: "Wine Team 🌷",
             teamMates: [
                 Learner(name: "Cesare", surname: "Longo", favouriteColor: .pink),
                 Learner(name: "Michela", surname: "D'Avino", favouriteColor: .pink),

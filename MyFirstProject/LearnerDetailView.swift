@@ -45,6 +45,6 @@ struct LearnedDetailView: View {
 
 struct LearnerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LearnedDetailView(learner: sharedData.learners[0])
+        LearnedDetailView(learner: sharedData.learners[40])
     }
 }
